@@ -22,8 +22,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- Template Basic Images Start -->
-    <link rel="icon" href="img/favicon.ico"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png"/>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png" />
     <!-- Template Basic Images End -->
 
     <!-- Custom Browsers Color Start -->
@@ -48,6 +48,15 @@
         .select__list {
             visibility: hidden;
             opacity: 0;
+        }
+
+        .nav-link {
+            color: #000000;
+            text-decoration-color: #000000;
+        }
+
+        .product-slider__item {
+            visibility: hidden;
         }
 
         @media screen and (max-width: 991px) {
@@ -451,87 +460,375 @@
                 </div>
               </div>
             </div>
-                <hr>
             
                             <!-- End product-single-header -->
 
+            <div class="hr">&nbsp;</div>
+
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-5">
+                    <div class="col-12 col-lg-6 col-xxl-5 order-2 order-lg-1">
 
                         <!-- Start product-single-tabs -->
-                        <div class="container">
-                          <div class="row">
+                        <div class="product-tabs">
                         
-                            <div class="col-12">
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab"
+                                aria-controls="description" aria-selected="true">Опис</a></li>
+                            <li class="nav-item">
+                              <a class="nav-link " id="features-tab" data-toggle="tab" href="#features" role="tab" aria-controls="features"
+                                aria-selected="false">Характеристики</a></li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews"
+                                aria-selected="false">Відгуки</a></li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="video-view-tab" data-toggle="tab" href="#video-view" role="tab" aria-controls="video-view"
+                                aria-selected="false">Відеоогляд</a>
+                            </li>
+                          </ul>
                         
-                              <div class="product-head">
-                                <h4 class="title">
-                                  Мотоцикл MT125-8 Dingo green
-                                </h4>
-                                <div class="product-head-sub">
-                                  <div class="product-head__response">
-                                    <svg width="85" height="17" viewBox="0 0 85 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#A91918"/>
-                                    <path d="M25.5 0L27.4084 5.87336L33.584 5.87336L28.5878 9.50329L30.4962 15.3766L25.5 11.7467L20.5038 15.3766L22.4122 9.50329L17.416 5.87336L23.5916 5.87336L25.5 0Z" fill="#A91918"/>
-                                    <path d="M42.5 0L44.4084 5.87336L50.584 5.87336L45.5878 9.50329L47.4962 15.3766L42.5 11.7467L37.5038 15.3766L39.4122 9.50329L34.416 5.87336L40.5916 5.87336L42.5 0Z" fill="#A91918"/>
-                                    <path d="M59.5 0L61.4084 5.87336L67.584 5.87336L62.5878 9.50329L64.4962 15.3766L59.5 11.7467L54.5038 15.3766L56.4122 9.50329L51.416 5.87336L57.5916 5.87336L59.5 0Z" fill="#A91918"/>
-                                    <path d="M76.5 0L78.4084 5.87336L84.584 5.87336L79.5878 9.50329L81.4962 15.3766L76.5 11.7467L71.5038 15.3766L73.4122 9.50329L68.416 5.87336L74.5916 5.87336L76.5 0Z" fill="#A91918"/>
-                                    </svg>
-                                    <p>12 відгуків</p>
-                                  </div>
-                        
-                                  <div class="product-head__code">
-                                    <p><span>Код:</span> 32815055</p>
-                                  </div>
-                                </div>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="featuresiption-tab">
+                              <div class="description">
+                                <p>
+                                  Наявність: в наявності
+                                </p>
+                                <p>
+                                  Ціна: <span>10 000$</span>
+                                </p>
+                                <p>
+                                  Модель: MT125-8 Dingo
+                                </p>
                               </div>
                         
                             </div>
-                          </div>
-                        </div>
-                            <hr>
+                            <div class="tab-pane fade" id="features" role="tabpanel" aria-labelledby="features-tab">
+                              <div class="features">
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Двигун, тип
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">Бензиновий, 4-х тактний, одноциліндровий, двохклапанний, повітряного охолодження,
+                                    горизонтально розташований</div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>Крутний момент</p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">7.9 / 6000 Нм / об.хв.</div>
+                                </div>
                         
-                                                    <!-- End product-single-tabs -->
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>Рекомендований клас в'язкості масла</p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">10W-40 / 15W-50 Напівсинтетичне масло для мотоциклетних двигунів (в залежності від
+                                    сезонності)</div>
+                                </div>
+                        
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>Обсяг</p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">119,7 см3 </div>
+                                </div>
+                        
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>Система охолодження</p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">Повітряна</div>
+                                </div>
+                        
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Система електроживлення
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    АКБ 12V 5A
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Система
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    запалювання Електронне (CDI) і кікстартера
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Максимальна потужність
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    8/7500 к.с. / об.хв.
+                        
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      КПП
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    4-х ступінчаста механічна трансмісія в масляній ванні
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Тип приводу
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    Ланцюговий привід, маркування ланцюга (428), виробник CHOHO.
+                        
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Задні гальмівні механізми
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    Барабанний, механічний з приводом через механічний тяговий важіль
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Передні гальмівні механізми
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                        
+                                    Дискові, з гідравлічним приводом
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Підвіска задня
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    Маятникова з пружинно-гідравлічними амортизаторами
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Підвіска передня
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    телескопічна вилка з гідравлічними амортизаторами
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Колісні диски
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    Алюмінієві легкосплавні, пятіспіцевие, пофарбовані матовою порошковою емаллю чорного кольору
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Максимальна швидкість
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    80 км / год
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Витрата палива л/100км
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    ≥2,1
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Вантажопідйомність
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    130 кг
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Розмір шин передні / задн
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    2.50-17 / 2.75-17
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Обсяг паливного бака
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    12 л (включаючи 0,5 літра резерву)
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Заправний обсягу масла в двигуні
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    1 л
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Доступні кольори
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    Чорний перламутр; Зелений матовий, Графітовий металік
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Масо-габаритні характеристики
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    Довжина, 1900 мм <br>
+                                    Ширина, 780 мм <br>
+                                    Висота, 1070 мм <br>
+                                    Колісна база, 1215
+                                  </div>
+                                </div>
+                                <div class="features__row">
+                                  <div class="features-el-l">
+                                    <p>
+                                      Споряджена маса (без урахування палива)
+                                    </p>
+                                    <div class="hr">&nbsp;</div>
+                                  </div>
+                                  <div class="features-el-r">
+                                    92 кг
+                                  </div>
+                                </div>
+                        
+                        
+                              </div>
+                            </div>
+                        
+                            <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                              Відгуки покупців про Мотоцикл
+                              MT125-8 Dingo green
+                            </div>
+                        
+                        
+                            <div class="tab-pane fade" id="video-view" role="tabpanel" aria-labelledby="video-view-tab">
+                              <div class="product-video">
+                                <h5 class="title">Відеоогляд Мотоцикл MT125-8 Dingo green</h5>
+                                <iframe width="100%" height="100%"
+                                  src="https://www.youtube.com/embed/_VoZuJV_FII?list=PL25UFCeq-frEuW4P_3kYxKo0PlotzWOaX" frameborder="0"
+                                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>                        <!-- End product-single-tabs -->
 
                     </div>
 
-                    <div class="col-12 col-lg-7">
+                    <div class="col-12 col-lg-6 offset-xl-0 offset-xxl-1 col-xxl-6 order-1 order-lg-2">
 
                         <!-- Start product-single-view -->
-                        <div class="container">
-                          <div class="row">
-                        
-                            <div class="col-12">
-                        
-                              <div class="product-head">
-                                <h4 class="title">
-                                  Мотоцикл MT125-8 Dingo green
-                                </h4>
-                                <div class="product-head-sub">
-                                  <div class="product-head__response">
-                                    <svg width="85" height="17" viewBox="0 0 85 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#A91918"/>
-                                    <path d="M25.5 0L27.4084 5.87336L33.584 5.87336L28.5878 9.50329L30.4962 15.3766L25.5 11.7467L20.5038 15.3766L22.4122 9.50329L17.416 5.87336L23.5916 5.87336L25.5 0Z" fill="#A91918"/>
-                                    <path d="M42.5 0L44.4084 5.87336L50.584 5.87336L45.5878 9.50329L47.4962 15.3766L42.5 11.7467L37.5038 15.3766L39.4122 9.50329L34.416 5.87336L40.5916 5.87336L42.5 0Z" fill="#A91918"/>
-                                    <path d="M59.5 0L61.4084 5.87336L67.584 5.87336L62.5878 9.50329L64.4962 15.3766L59.5 11.7467L54.5038 15.3766L56.4122 9.50329L51.416 5.87336L57.5916 5.87336L59.5 0Z" fill="#A91918"/>
-                                    <path d="M76.5 0L78.4084 5.87336L84.584 5.87336L79.5878 9.50329L81.4962 15.3766L76.5 11.7467L71.5038 15.3766L73.4122 9.50329L68.416 5.87336L74.5916 5.87336L76.5 0Z" fill="#A91918"/>
-                                    </svg>
-                                    <p>12 відгуків</p>
-                                  </div>
-                        
-                                  <div class="product-head__code">
-                                    <p><span>Код:</span> 32815055</p>
-                                  </div>
-                                </div>
+                        <div class="product-view">
+                          <div class="product-view__picture">
+                            <img class="js-img-change" src="img/s-1-big-min.png"
+                                    data-img="img/product-slider/s-1-big-min.png" alt="">
+                          </div>
+                          <div class="product-view__slider">
+                            <div class="product-slider">
+                              <div class="product-slider__item">
+                                <div class="p-slider-img active"><img src="img/s-1-small-min.png"
+                                    data-img="img/s-1-big-min.png" alt=""></div>
                               </div>
-                        
+                              <div class="product-slider__item">
+                                <div class="p-slider-img"><img src="img/s-2-small-min.png"
+                                    data-img="img/s-2-big-min.png" alt=""></div>
+                              </div>
+                              <div class="product-slider__item">
+                                <div class="p-slider-img"><img src="img/s-3-small-min.png"
+                                    data-img="img/s-3-big-min.png" alt=""></div>
+                              </div>
+                              <div class="product-slider__item">
+                                <div class="p-slider-img"><img src="img/s-4-small-min.png"
+                                    data-img="img/s-4-big-min.png" alt=""></div>
+                              </div>
+                              <div class="product-slider__item">
+                                <div class="p-slider-img"><img src="img/s-5-small-min.png"
+                                    data-img="img/s-5-big-min.png" alt=""></div>
+                              </div>
+                              <div class="product-slider__item">
+                                <div class="p-slider-img"><img src="img/s-6-small-min.png"
+                                    data-img="img/s-6-big-min.png" alt=""></div>
+                              </div>
+                              <div class="product-slider__item">
+                                <div class="p-slider-img"><img src="img/s-6-small-min.png"
+                                    data-img="img/s-6-big-min.png" alt=""></div>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                            <hr>
-                        
-                                                    <!-- End product-single-view -->
+                        </div>                        <!-- End product-single-view -->
 
                     </div>
 
@@ -553,7 +850,7 @@
                   
                     <div class="good-card">
                       <a href="#" class="good-card__picture">
-                        <img src="img/catalog-good-10.png" data-scr="../../img/catalog-good-10.png" alt="">
+                        <img src="img/catalog-good-10.png" data-src="img/catalog-good-10.png" alt="">
                       </a>
                       <div class="good-card__title">
                         <p>НАЗВА ТОВАРУ ВИРОБНИК</p>
@@ -569,7 +866,7 @@
                   
                     <div class="good-card">
                       <a href="#" class="good-card__picture">
-                        <img src="img/catalog-good-11.png" data-scr="../../img/catalog-good-11.png" alt="">
+                        <img src="img/catalog-good-11.png" data-src="img/catalog-good-11.png" alt="">
                       </a>
                       <div class="good-card__title">
                         <p>НАЗВА ТОВАРУ ВИРОБНИК</p>
@@ -585,7 +882,7 @@
                   
                     <div class="good-card">
                       <a href="#" class="good-card__picture">
-                        <img src="img/catalog-good-12.png" data-scr="../../img/catalog-good-12.png" alt="">
+                        <img src="img/catalog-good-12.png" data-src="img/catalog-good-12.png" alt="">
                       </a>
                       <div class="good-card__title">
                         <p>НАЗВА ТОВАРУ ВИРОБНИК</p>
@@ -601,7 +898,7 @@
                   
                     <div class="good-card">
                       <a href="#" class="good-card__picture">
-                        <img src="img/catalog-good-13.png" data-scr="../../img/catalog-good-13.png" alt="">
+                        <img src="img/catalog-good-13.png" data-src="img/catalog-good-13.png" alt="">
                       </a>
                       <div class="good-card__title">
                         <p>НАЗВА ТОВАРУ ВИРОБНИК</p>
@@ -617,7 +914,7 @@
                   
                     <div class="good-card">
                       <a href="#" class="good-card__picture">
-                        <img src="img/catalog-good-14.png" data-scr="../../img/catalog-good-14.png" alt="">
+                        <img src="img/catalog-good-14.png" data-src="img/catalog-good-14.png" alt="">
                       </a>
                       <div class="good-card__title">
                         <p>НАЗВА ТОВАРУ ВИРОБНИК</p>
@@ -633,7 +930,7 @@
                   
                     <div class="good-card">
                       <a href="#" class="good-card__picture">
-                        <img src="img/catalog-good-15.png" data-scr="../../img/catalog-good-15.png" alt="">
+                        <img src="img/catalog-good-15.png" data-src="img/catalog-good-15.png" alt="">
                       </a>
                       <div class="good-card__title">
                         <p>НАЗВА ТОВАРУ ВИРОБНИК НАЗВА ТОВАРУ У ДВА РЯДКИ</p>
@@ -656,7 +953,7 @@
                   <div class="col-12">
             
                     <h5 class="title title--section">
-                       замовляють разом
+                       Також вас можуть зацікавити
                     </h5>
                   </div>
             
@@ -664,7 +961,7 @@
                   
                     <div class="good-card">
                       <a href="#" class="good-card__picture">
-                        <img src="img/catalog-good-1.png" data-scr="../../img/catalog-good-1.png" alt="">
+                        <img src="img/catalog-good-1.png" data-src="img/catalog-good-1.png" alt="">
                       </a>
                       <div class="good-card__title">
                         <p>НАЗВА ТОВАРУ ВИРОБНИК НАЗВА ТОВАРУ У ДВА РЯДКИ</p>
@@ -680,7 +977,7 @@
                   
                     <div class="good-card">
                       <a href="#" class="good-card__picture">
-                        <img src="img/catalog-good-2.png" data-scr="../../img/catalog-good-2.png" alt="">
+                        <img src="img/catalog-good-2.png" data-src="img/catalog-good-2.png" alt="">
                       </a>
                       <div class="good-card__title">
                         <p>НАЗВА ТОВАРУ ВИРОБНИК</p>
@@ -696,7 +993,7 @@
                   
                     <div class="good-card">
                       <a href="#" class="good-card__picture">
-                        <img src="img/catalog-good-3.png" data-scr="../../img/catalog-good-3.png" alt="">
+                        <img src="img/catalog-good-3.png" data-src="img/catalog-good-3.png" alt="">
                       </a>
                       <div class="good-card__title">
                         <p>НАЗВА ТОВАРУ ВИРОБНИК</p>
@@ -712,7 +1009,7 @@
                   
                     <div class="good-card">
                       <a href="#" class="good-card__picture">
-                        <img src="img/catalog-good-4.png" data-scr="../../img/catalog-good-4.png" alt="">
+                        <img src="img/catalog-good-4.png" data-src="img/catalog-good-4.png" alt="">
                       </a>
                       <div class="good-card__title">
                         <p>НАЗВА ТОВАРУ ВИРОБНИК</p>
@@ -728,7 +1025,7 @@
                   
                     <div class="good-card">
                       <a href="#" class="good-card__picture">
-                        <img src="img/catalog-good-5.png" data-scr="../../img/catalog-good-1.png" alt="">
+                        <img src="img/catalog-good-5.png" data-src="img/catalog-good-1.png" alt="">
                       </a>
                       <div class="good-card__title">
                         <p>НАЗВА ТОВАРУ ВИРОБНИК</p>
@@ -744,7 +1041,7 @@
                   
                     <div class="good-card">
                       <a href="#" class="good-card__picture">
-                        <img src="img/catalog-good-3.png" data-scr="../../img/catalog-good-3.png" alt="">
+                        <img src="img/catalog-good-3.png" data-src="img/catalog-good-3.png" alt="">
                       </a>
                       <div class="good-card__title">
                         <p>НАЗВА ТОВАРУ ВИРОБНИК</p>
@@ -919,6 +1216,15 @@
 
     </div>
     <!-- End site wrapper -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 <script type="text/javascript" src="bundle.js"></script></body>
 
 </html>

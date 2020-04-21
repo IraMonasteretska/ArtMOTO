@@ -67,6 +67,12 @@
                 visibility: hidden;
             }
         }
+
+        @media screen and (max-width: 576px) {
+            .category-filter {
+                transform: translateX(-100%);
+            }
+        }
     </style>
 <link href="main.css" rel="stylesheet"></head><!-- End head -->
 
@@ -74,16 +80,16 @@
 <!-- fixed header: header position: fixed -->
 
 <body class="fixed-header">
-         <div class="preloader">
-            <div class="preloader-iner">
-             <svg xmlns="http://www.w3.org/2000/svg" width="180px" height="180px">
-            <circle  cx="90" cy="90" r="89" class="circle"/>
-            </svg>
-          </div>
-          <div class="preloader__logo">
-          <img src="img/preloader-logo.png" alt="">
-          </div>
-        </div>
+     <div class="preloader">
+        <div class="preloader-iner">
+         <svg xmlns="http://www.w3.org/2000/svg" width="180px" height="180px">
+        <circle  cx="90" cy="90" r="89" class="circle"/>
+        </svg>
+      </div>
+      <div class="preloader__logo">
+      <img src="img/preloader-logo.png" alt="">
+      </div>
+    </div>
     <!-- Start site wrapper -->
     <div class="site-wrapper">
 
@@ -420,7 +426,7 @@
             <div class="container">
                 <div class="row">
                     <div
-                        class="order-sm-1 order-2 1col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2 border-right d-flex justify-content-center">
+                        class="order-sm-1 order-2 1col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2 border-right d-flex justify-content-center js-filter category-filter">
 
                         <ul class="c-category">
                             <li class="c-category__item active">
@@ -472,6 +478,17 @@
                             </li>
                         </ul>
 
+                        <div class="category-filter__btn js-filter-btn">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="971.986px" height="971.986px" viewBox="0 0 971.986 971.986" style="enable-background: new 0 0 971.986 971.986;"
+                                 xml:space="preserve">
+                            <g>
+                                <path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+                                    c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+                                    c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z"/>
+                            </g>
+                            </svg>
+                        </div>
                     </div>
                     <div class="order-sm-2 order-1 col-12 col-sm-7 col-md-8 col-lg-9 col-xl-10">
                         <!-- Start slider-category -->

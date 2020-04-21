@@ -67,6 +67,12 @@
                 visibility: hidden;
             }
         }
+
+        @media screen and (max-width: 576px) {
+            .category-filter {
+                transform: translateX(-100%);
+            }
+        }
     </style>
 <link href="main.css" rel="stylesheet"></head><!-- End head -->
 
@@ -74,16 +80,16 @@
 <!-- fixed header: header position: fixed -->
 
 <body class="fixed-header">
-         <div class="preloader">
-            <div class="preloader-iner">
-             <svg xmlns="http://www.w3.org/2000/svg" width="180px" height="180px">
-            <circle  cx="90" cy="90" r="89" class="circle"/>
-            </svg>
-          </div>
-          <div class="preloader__logo">
-          <img src="img/preloader-logo.png" alt="">
-          </div>
-        </div>
+     <div class="preloader">
+        <div class="preloader-iner">
+         <svg xmlns="http://www.w3.org/2000/svg" width="180px" height="180px">
+        <circle  cx="90" cy="90" r="89" class="circle"/>
+        </svg>
+      </div>
+      <div class="preloader__logo">
+      <img src="img/preloader-logo.png" alt="">
+      </div>
+    </div>
     <!-- Start site wrapper -->
     <div class="site-wrapper">
 
@@ -415,11 +421,12 @@
 
 
         <!--Start page-->
-        <div class="page-wrapper page-home">
+        <div class="page-wrapper page-catalog">
 
             <div class="container">
                 <div class="row">
-                    <div class="order-sm-1 order-2 1col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2 border-right d-flex justify-content-center">
+                    <div
+                        class="order-sm-1 order-2 1col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2 border-right d-flex justify-content-center">
 
                         <!-- Start catalog-aside -->
                         <!-- Start catalog-aside  -->
